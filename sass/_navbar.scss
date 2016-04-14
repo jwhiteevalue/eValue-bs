@@ -1,0 +1,69 @@
+/* #Navbar - eValue styling
+*********************************************************** */
+.navbar {
+  position:fixed;
+  width:100%;
+  z-index:1029;
+  padding-top:80px;
+  margin-bottom:0;
+  border-width:0;
+  min-height:1px;
+}
+
+.nav {
+  li {
+    a {
+      padding:10px 24px;
+    }
+  }
+
+  li.active:after {
+    height:4px;
+    background-color:$brand-primary;
+    width:100%;
+    content: " ";
+    display:block;
+    position:absolute;
+    bottom:0;
+    left:0;
+  }
+
+	@media (max-width: $screen-xs-max) {
+		li.active {
+			background-color:$brand-primary;
+			color:$white;
+		}
+
+		li.active:after {
+			height:0;
+		}
+	}
+}
+
+.navbar-default {
+	.navbar-nav {
+		> li > a {
+			&:hover {
+				color: $navbar-default-link-hover-color;
+				background-color: $navbar-default-bg;
+			}
+
+			&:focus {
+				color: $navbar-default-link-hover-color;
+				background-color: $navbar-default-link-hover-bg;
+			}
+		}
+		> .active > a {
+			&,
+			&:hover {
+				color: $navbar-default-link-active-color;
+				background-color: $navbar-default-bg;
+			}
+
+			&:focus {
+				color: $navbar-default-link-active-color;
+				background-color: $navbar-default-link-hover-bg;
+			}
+		}
+	}
+}

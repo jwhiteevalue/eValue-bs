@@ -1,0 +1,143 @@
+/* set up some colors and shades
+*********************************************************** */
+$black:																		#000;
+$white:																		#fff;
+$gray-base:																$black !default;
+$gray-darker:															lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:																#404040 !default;
+$gray:																		#58585a !default; //
+$gray-light:								              lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:              						  #ccc;
+$gray-lightest:											      #f1f1f1 !default;
+
+$brand-primary: 													#ffcf01 !default; // brand yellow
+$brand-secondary:													$gray-lightest!default;
+
+/* Fonts
+*********************************************************** */
+/* body font family */
+$font-family-sans-serif:									"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$text-color:															$gray-dark !default;
+$font-size-base:													14px;
+$line-height-base:												1.428571429 !default;
+
+@font-face {
+  font-family:'Open Sans';
+  src: url("/styles/eValue-bs/fonts/opensans-regular-webfont.eot");
+  src:
+		url("/styles/eValue-bs/fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"),
+		url("/styles/eValue-bs/fonts/opensans-regular-webfont.woff") format("woff"),
+		url("/styles/eValue-bs/fonts/opensans-regular-webfont.ttf") format("truetype"),
+		url("/styles/eValue-bs/fonts/opensans-regular-webfont.svg#Open Sans") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* headings font family */
+$headings-font-family:										"museo500", Arial, sans-serif !default;
+$headings-color:													$gray!default;
+$font-size-h1:														30px;
+$font-size-h2:														$font-size-h1*0.85;
+
+@font-face {
+  font-family: 'museo500';
+  src: url("/styles/eValue-bs/fonts/museo500-regular-webfont.eot");
+  src:
+	url("/styles/eValue-bs/fonts/museo500-regular-webfont.eot?#iefix") format("embedded-opentype"),
+	url("/styles/eValue-bs/fonts/museo500-regular-webfont.woff") format("woff"),
+	url("/styles/eValue-bs/fonts/museo500-regular-webfont.ttf") format("truetype"),
+	url("/styles/eValue-bs/fonts/museo500-regular-webfont.svg#museo500") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* Setting header, main and footer colors
+*********************************************************** */
+$header-bg:																$gray-dark;
+$header-text-color:												$white;
+$footer-bg:																$gray-light;
+$footer-text-color:												$gray-light;
+
+
+/* navbar
+*********************************************************** */
+$navbar-default-bg:												$black;
+$navbar-default-color: 										$gray-lighter !default;
+$navbar-default-border: 									transparent !default;
+$navbar-border-radius:  									0 !default;
+
+$navbar-default-link-color:								$gray-lightest !default;
+$navbar-default-link-hover-color:         $gray-lightest !default;
+$navbar-default-link-hover-bg:						lighten($navbar-default-bg, 25%) !default;
+$navbar-default-link-active-color:        $brand-primary !default;
+$navbar-default-link-active-bg:           lighten($navbar-default-bg, 25%) !default;
+$navbar-default-link-disabled-color:      $gray !default;
+
+
+/* The logo
+*********************************************************** */
+$logo:																		url("/styles/eValue-bs/images/logo.png");
+$logo-width:															160px;
+$logo-bg-size:														auto 60px;
+$logo-min-height:													80px;
+
+
+/* panels
+*********************************************************** */
+$panel-border-radius:											0;
+$panel-footer-bg:													transparent;
+
+
+/* Links
+*********************************************************** */
+/* link states, colors, background colors and decoration settings
+*********************************************************** */
+$link-color: 															#117FBA !default;
+$link-visited-color:											$link-color;
+$link-hover-color:												$link-color;
+$link-active-color:												darken($link-color, 10%) !default;
+$link-decoration:													none;
+$link-decoration-hover:										$link-decoration;
+
+$link-header-color:												$gray-lightest;
+$link-header-visited-color:								$link-header-color;
+$link-header-hover-color:									$link-header-color;
+$link-header-active-color:								darken($link-header-color, 10%) !default;
+$link-header-decoration:									none;
+$link-header-decoration-hover:						underline;
+
+$link-footer-color:												$gray-lighter;
+$link-footer-visited-color:								$link-footer-color;
+$link-footer-active-color:								darken($link-footer-color,10%);
+$link-footer-hover-color:									$link-footer-color;
+$link-footer-decoration:									none;
+$link-footer-decoration-hover:						underline;
+
+
+/* Buttons
+*********************************************************** */
+/* default */
+$btn-color: 															$gray-lighter;
+$btn-background:													$gray;
+$btn-border:															$btn-background;
+
+$btn-active:															$gray-lighter;
+$btn-active-background:										darken($btn-background,10%);
+$btn-active-border:												$btn-active-background;
+/* primary */
+$btn-primary-color:												$white;
+$btn-primary-background:									$brand-primary;
+$btn-primary-border:											$btn-primary-background;
+
+$btn-primary-active:											$btn-primary-color;
+$btn-primary-active-background:						lighten($btn-primary-background,10%);
+$btn-primary-active-border:								$btn-primary-active-background;
+/* secondary */
+$btn-secondary-color:											$btn-color;
+$btn-secondary-background:								$btn-background;
+$btn-secondary-border:										$btn-border;
+
+$btn-secondary-active:										$btn-active;
+$btn-secondary-active-background:					$btn-active-background;
+$btn-secondary-active-border:							$btn-active-border;

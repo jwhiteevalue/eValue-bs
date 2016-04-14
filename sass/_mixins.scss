@@ -1,0 +1,48 @@
+
+/* Button Mixin
+*********************************************************** */
+@mixin link-variant ($link, $visit, $hover, $active, $decoration, $decoration-hover) {
+  color: $link;
+  text-decoration:$decoration;
+
+  &:visited {
+    color: $visit;
+    text-decoration:$decoration;
+  }
+
+  &:hover {
+    color: $hover;
+    text-decoration:$decoration-hover;
+  }
+
+  &:active,
+  &:focus {
+    color: $active;
+    text-decoration:$decoration;
+  }
+}
+
+/* Button Mixin
+*********************************************************** */
+@mixin btn-variant($color, $background, $border) {
+	color:$color;
+	background-color:$background;
+	border-color:$border;
+
+	&:hover {
+		color:$color;
+		background-color:$background;
+		border-color:$border;
+	}
+
+	&:active,
+	&:focus,
+	&:active:focus {
+		color:$btn-active;
+		background-color:$btn-active-background;
+		border-color:$btn-active-border;
+	}
+}
+
+/* Panels Mixin
+*********************************************************** */

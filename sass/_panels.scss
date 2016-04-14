@@ -1,0 +1,20 @@
+//
+// Panels
+// --------------------------------------------------
+
+// Base class
+.panel {
+  background-color: $panel-bg;
+	border:1px solid $gray-lightest;
+  @include box-shadow(0 2px 5px $gray-lighter);
+}
+
+.panel-footer {
+	border-top: 0;
+/*
+  padding: $panel-footer-padding;
+  background-color: $panel-footer-bg;
+
+  @include border-bottom-radius(($panel-border-radius - 1));
+*/
+}
