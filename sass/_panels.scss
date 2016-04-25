@@ -9,6 +9,30 @@
   @include box-shadow(0 2px 5px $gray-lighter);
 }
 
+.panel-heading {
+	padding:0;
+	a {
+		border-top-left-radius:$border-radius-base;
+		border-top-right-radius:$border-radius-base;
+		//@include border-top-radius(($panel-border-radius - 1));
+	}
+
+	a,
+	a:hover {
+
+		display:block;
+		color:$gray;
+		padding:10px 15px;
+	}
+
+	a:focus,
+	a:active,
+	a[aria-expanded="true"] {
+		background-color:$gray-dark;
+		color:$white;
+	}
+}
+
 .panel-footer {
 	border-top: 0;
 /*

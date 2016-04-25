@@ -4,7 +4,7 @@
     "author": "Jon White",
 	  "description": "A version of Bootstrap, particular to eValue.",
 		"main": [
-	    "sass/_eValue-bs.scss",
+	    "sass/_eValue-master.scss",
 	    "js/eValue-bs.js"
 	  ],
     "ignore": [
@@ -13,5 +13,5 @@
     "dependencies": {
         "jquery": ">=1.10.2"
     },
-		"version": "0.0.1"
+		"version": "0.0.2"
 }

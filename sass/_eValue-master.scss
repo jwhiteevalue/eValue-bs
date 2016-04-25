@@ -3,15 +3,14 @@
 @import '_mixins.scss';
 
 /* 2. Use Bootstrap-sass to fill any gaps */
-@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
-@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
+@import '/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+@import '/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
 
 /* 3. import the styling itself */
 @import '_buttons.scss';
 @import '_panels.scss';
-
 @import '_navbar.scss';
-
+@import '_icomoon.scss';
 
 /*
 	Some styling that I'm putting here for the time being.
@@ -218,4 +217,21 @@ footer {
       }
     }
   }
+}
+
+/* icomoon example layout - not for production use!
+*********************************************************** */
+.example-icomoon {
+	margin-top:40px;
+	li {
+		text-align:center;
+		width:24%;
+		margin-bottom:40px;
+		padding:0;
+	}
+
+	[class*="icon-"],
+	[class^="icon-"] {
+		font-size:$font-size-base*2.5;
+	}
 }
