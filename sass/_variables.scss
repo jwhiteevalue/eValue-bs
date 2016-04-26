@@ -13,6 +13,10 @@ $gray-lightest:											      #f1f1f1 !default;
 $brand-primary: 													#ffcf01 !default; // brand yellow
 $brand-secondary:													$gray-lightest!default;
 
+/* File path
+*********************************************************** */
+$filepath: 																"/bower_components/eValue-bs/";
+
 /* Fonts
 *********************************************************** */
 /* body font family */
@@ -23,12 +27,12 @@ $line-height-base:												1.428571429 !default;
 
 @font-face {
   font-family:'Open Sans';
-  src: url("/styles/eValue-bs/fonts/opensans-regular-webfont.eot");
+  src: url("#{$filepath}fonts/opensans-regular-webfont.eot");
   src:
-		url("/styles/eValue-bs/fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"),
-		url("/styles/eValue-bs/fonts/opensans-regular-webfont.woff") format("woff"),
-		url("/styles/eValue-bs/fonts/opensans-regular-webfont.ttf") format("truetype"),
-		url("/styles/eValue-bs/fonts/opensans-regular-webfont.svg#Open Sans") format("svg");
+		url("#{$filepath}fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"),
+		url("#{$filepath}fonts/opensans-regular-webfont.woff") format("woff"),
+		url("#{$filepath}fonts/opensans-regular-webfont.ttf") format("truetype"),
+		url("#{$filepath}fonts/opensans-regular-webfont.svg#Open Sans") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -41,12 +45,12 @@ $font-size-h2:														$font-size-h1*0.85;
 
 @font-face {
   font-family: 'museo500';
-  src: url("/styles/eValue-bs/fonts/museo500-regular-webfont.eot");
+  src: url("#{$filepath}fonts/museo500-regular-webfont.eot");
   src:
-	url("/styles/eValue-bs/fonts/museo500-regular-webfont.eot?#iefix") format("embedded-opentype"),
-	url("/styles/eValue-bs/fonts/museo500-regular-webfont.woff") format("woff"),
-	url("/styles/eValue-bs/fonts/museo500-regular-webfont.ttf") format("truetype"),
-	url("/styles/eValue-bs/fonts/museo500-regular-webfont.svg#museo500") format("svg");
+	url("#{$filepath}fonts/museo500-regular-webfont.eot?#iefix") format("embedded-opentype"),
+	url("#{$filepath}fonts/museo500-regular-webfont.woff") format("woff"),
+	url("#{$filepath}fonts/museo500-regular-webfont.ttf") format("truetype"),
+	url("#{$filepath}fonts/museo500-regular-webfont.svg#museo500") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -77,7 +81,7 @@ $navbar-default-link-disabled-color:      $gray !default;
 
 /* The logo
 *********************************************************** */
-$logo:																		url("/styles/eValue-bs/images/logo.png");
+$logo:																		url("#{$filepath}images/logo.png");
 $logo-width:															160px;
 $logo-bg-size:														auto 60px;
 $logo-min-height:													80px;
