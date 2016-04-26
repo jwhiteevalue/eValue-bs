@@ -1,21 +1,18 @@
 {
-  "name": "eValue-bs",
-  "homepage": "https://github.com/jwhiteevalue/eValue-bs.git",
-  "author": "Jon White",
-  "description": "A version of Bootstrap, particular to eValue.",
+    "name": "eValue-bs",
+		"homepage": "https://github.com/jwhiteevalue/eValue-bs.git",
+    "author": "Jon White",
+	  "description": "A version of Bootstrap, based on the original but with eValue branding placed on top.",
+		"main": [
+	    "sass/_eValue-master.scss",
+	    "js/eValue-bs.js"
+	  ],
+    "ignore": [
 
-  "main": [
-    "sass/_eValue-master.scss",
-    "js/eValue-bs.js"
-  ],
-
-  "ignore": [
-  ],
-
-  "dependencies": {
-    "jquery": ">=1.10.2",
-    "bootstrap-sass": "~3.3.6"
-  },
-
-   "version": "0.0.5"
+    ],
+    "dependencies": {
+        "jquery": ">=1.10.2",
+				"bootstrap-sass": "~3.3.6"
+    },
+		"version": "0.1.1"
 }
