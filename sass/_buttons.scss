@@ -7,6 +7,7 @@
     text-decoration: none;
 	}
 
+
 	&,
   &:active,
   &.active {
@@ -16,6 +17,7 @@
     }
   }
 
+	&:hover,
   &:focus,
   &.focus {
     color: $btn-default-color;
@@ -44,7 +46,8 @@
 
 	&:active,
 	&:focus,
-	&:active:focus {
+	&:active:focus,
+	&:active:hover {
 		color:$btn-secondary-active;
 		background-color:$btn-secondary-active-background;
 		border-color:$btn-secondary-active-border;
@@ -56,7 +59,8 @@
 
 	&:active,
 	&:focus,
-	&:active:focus {
+	&:active:focus,
+	&:active:hover {
 		color:$btn-primary-active;
 		background-color:$btn-primary-active-background;
 		border-color:$btn-primary-active-border;
