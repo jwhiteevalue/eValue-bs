@@ -4,15 +4,9 @@
   position:fixed;
   width:100%;
   z-index:1029;
-  padding-top:80px;
   margin-bottom:0;
   border-width:0;
   min-height:1px;
-
-	@media (max-width: $screen-xs-max) {
-		padding-top:0;
-	}
-
 }
 
 .nav {
@@ -71,4 +65,8 @@
 			}
 		}
 	}
+}
+
+.navbar-brand {
+	height:auto;
 }

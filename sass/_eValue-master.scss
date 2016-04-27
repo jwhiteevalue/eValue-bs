@@ -70,85 +70,59 @@ body {
 
 /* Layout: #Header
 *********************************************************** */
-header {
-	position: fixed;
-	right: 0;
-	left: 0;
-	z-index: $zindex-navbar-fixed;
-	background-color:$header-bg;
+.navbar-default {
+  .navbar-nav {
+    margin-top: $navbar-height;
+    li {
+      a {
+        padding: 10px 24px;
+        &:focus {
+          background-color: lighten($navbar-default-link-hover-bg,20%);
+          color: $white;
+        }
+      }
+    }
 
-	.logo {
-		background-image:$logo;
-		background-repeat:no-repeat;
-		background-size:$logo-bg-size;
-		background-position:15px 10px;
-    min-height:$logo-min-height;
-		width:$logo-width;
-		float:left;
-	}
+    li.active:after {
+      height: 4px;
+      background-color: $white;
+      width: 100%;
+      content: " ";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
 
-	.logo-title {
-		padding:10px 15px;
-		color: $header-text-color;
-		font-size:$font-size-h1;
-		font-family:$headings-font-family;
-		line-height:$line-height-base*1.5;
-		float:left;
-	}
-
-	.logout {
-	  float:right;
-	  margin-bottom:0;
-		margin-top:26px;
-	}
-
-	@media (max-width: $screen-xs-max) {
-		position:relative;
-
-		.logo {
-			background-position:0 10px;
-			background-size: auto $logo-bg-height*0.8;
-			width:$logo-width*0.8;
-		}
-
-		.logo-title {
-			font-size:$font-size-h4;
-			float:left;
-			padding:10px 0 0 0;
-		}
-
-		.logout {
-			margin-top:-8px;
-		}
-	}
-
-	@media (max-width: 320px) {
-		.logo {
-			//background-position:0 10px;
-			background-size: auto $logo-bg-height*1;
-			width:$logo-width*1;
-		}
-
-		.logo-title {
-			font-size:$font-size-base*1.3;
-			float:left;
-			padding:0;
-		}
-
-		.logout {
-			margin-top:-110px;
-		}
-	}
+    @media (max-width: $screen-sm-min) {
+      li {
+        a {
+          padding: 10px 15px;
+        }
+      }
+    }
+    @media (max-width: $screen-xs-min) {
+      li.active {
+        a {
+          background-color: $brand-primary!important;
+					color:$gray;
+        }
+      }
+      li.active:after {
+        display: none;
+      }
+    }
+  }
 }
 
 
 /* Layout: #main wrapper
 *********************************************************** */
 main {
-  padding-top:130px;
+  padding-top:100px;
 
   @media (max-width: $screen-xs-max) {
-    padding-top:60px;
+    padding-top:90px;
   }
 
   @media (min-width: $screen-xs-min)  and (max-width: $screen-sm-min) {
