@@ -3,8 +3,8 @@
 @import '_mixins.scss';
 
 /* 2. Use Bootstrap-sass to fill any gaps */
-@import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
-@import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
+@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
 
 /* 3. import the styling itself */
 @import '_buttons.scss';
@@ -70,51 +70,44 @@ body {
 /* Layout: #Header
 *********************************************************** */
 header {
-  display:flex;
-  align-items: center;
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: $zindex-navbar-fixed;
-  background-color:$header-bg;
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: $zindex-navbar-fixed;
+	background-color:$header-bg;
 
-  .logo {
+	.logo {
 		background-image:$logo;
 		background-repeat:no-repeat;
 		background-size:$logo-bg-size;
 		background-position:15px 10px;
-    float:left;
     min-height:$logo-min-height;
 		width:$logo-width;
+		float:left;
 	}
 
 	.logo-title {
-    padding:10px 15px;
+		padding:10px 15px;
 		color: $header-text-color;
-    font-size:$font-size-h1;
-    font-family:$headings-font-family;
+		font-size:$font-size-h1;
+		font-family:$headings-font-family;
 		line-height:$line-height-base*1.5;
 		float:left;
-  }
+	}
 
-  @media (max-width: $screen-sm-min) {
-    height:80px;
+	.logout {
+	  float:right;
+	  margin-bottom:0;
+		margin-top:26px;
+	}
 
-    .logo {
-      padding:10px 0;
+	@media (max-width: $screen-xs-max) {
+		position:relative;
 
-    }
-
-		.logo-title {
-			font-size:$font-size-h3;
-			float:right;
-		}
-  }
-
-  @media (max-width: $screen-xs-max) {
 		.logo {
-			background-position:0 20px;
-			margin-top:30px;
+			background-position:0 10px;
+			background-size: auto $logo-bg-height*0.8;
+			width:$logo-width*0.8;
 		}
 
 		.logo-title {
@@ -122,34 +115,43 @@ header {
 			float:left;
 			padding:10px 0 0 0;
 		}
-  }
 
+		.logout {
+			margin-top:-8px;
+		}
+	}
 
-  @media (min-width: $screen-xs-min)  and (max-width: $screen-sm-min) {
-  //  height:100px;
-  }
+	@media (max-width: 320px) {
+		.logo {
+			//background-position:0 10px;
+			background-size: auto $logo-bg-height*1;
+			width:$logo-width*1;
+		}
+
+		.logo-title {
+			font-size:$font-size-base*1.3;
+			float:left;
+			padding:0;
+		}
+
+		.logout {
+			margin-top:-110px;
+		}
+	}
 }
 
-.logout {
-  float:right;
-  margin-bottom:0;
-
-  li {
-
-  }
-}
 
 /* Layout: #main wrapper
 *********************************************************** */
 main {
-  padding-top:100px;
+  padding-top:130px;
 
   @media (max-width: $screen-xs-max) {
-    padding-top:160px;
+    padding-top:60px;
   }
 
   @media (min-width: $screen-xs-min)  and (max-width: $screen-sm-min) {
-    padding-top:40px;
+
   }
 }
 
