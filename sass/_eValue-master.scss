@@ -11,6 +11,7 @@
 @import '_panels.scss';
 @import '_navbar.scss';
 @import '_icomoon.scss';
+@@import '_login.scss';
 
 
 /*
@@ -119,7 +120,7 @@ body {
 /* Layout: #main wrapper
 *********************************************************** */
 main {
-  padding-top:100px;
+  padding-top:120px;
 
   @media (max-width: $screen-xs-max) {
     padding-top:90px;
