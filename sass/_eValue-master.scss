@@ -38,18 +38,8 @@ header .btn-link {
 /* Bootstrap Tables
 *********************************************************** */
 .table {
-	th {
-		background-color:$gray-lightest;
-	}
-
-	.form-group {
-		margin-bottom:0;
-	}
-
-	.radio,
-	.checkbox {
-		margin-top:0;
-		margin-bottom:0;
+	.non-numeric {
+		text-align:left;
 	}
 }
 
