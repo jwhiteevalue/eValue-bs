@@ -41,6 +41,10 @@ header .btn-link {
 .table {
 	.non-numeric {
 		text-align:left;
+		max-width:200px;
+		overflow:hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 }
 
