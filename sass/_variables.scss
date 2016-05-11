@@ -7,7 +7,7 @@ $gray-darker:															lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:																#404040 !default;
 $gray:																		#58585a !default; //
 $gray-light:								              lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter:              						  #ccc;
+$gray-lighter:              						  #ccc !default;
 $gray-lightest:											      #f1f1f1 !default;
 
 $brand-primary: 													#ffcf01 !default; // brand yellow
@@ -22,7 +22,7 @@ $filepath: 																"/bower_components/eValue-bs/";
 /* body font family */
 $font-family-sans-serif:									"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $text-color:															$gray-dark !default;
-$font-size-base:													14px;
+$font-size-base:													14px!default;
 $line-height-base:												1.428571429 !default;
 
 @font-face {
@@ -40,8 +40,8 @@ $line-height-base:												1.428571429 !default;
 /* headings font family */
 $headings-font-family:										"museo500", Arial, sans-serif !default;
 $headings-color:													$gray!default;
-$font-size-h1:														30px;
-$font-size-h2:														$font-size-h1*0.85;
+$font-size-h1:														30px !default;
+$font-size-h2:														$font-size-h1*0.85 !default;
 
 @font-face {
   font-family: 'museo500';
@@ -58,16 +58,15 @@ $font-size-h2:														$font-size-h1*0.85;
 
 /* Setting header, main and footer colors
 *********************************************************** */
-$header-bg:																$gray-dark;
-$header-text-color:												$white;
-$footer-bg:																$gray-light;
-$footer-text-color:												$gray-light;
+$header-bg:																$gray-dark !default;
+$header-text-color:												$white !default;
+$footer-bg:																$gray-light !default;
+$footer-text-color:												$gray-light !default;
 
 
 /* navbar
 *********************************************************** */
 $navbar-default-bg:												$gray-dark!default;
-$navbar-default-bg1:												#110099!default;
 $navbar-default-color: 										$gray-lighter !default;
 $navbar-default-border: 									transparent !default;
 $navbar-border-radius:  									0 !default;
@@ -83,69 +82,69 @@ $navbar-default-link-disabled-color:      $gray !default;
 /* The logo
 *********************************************************** */
 $logo:																		url("#{$filepath}images/logo.png");
-$logo-width:															160px;
-$logo-bg-size:														auto 60px;
-$logo-min-height:													80px;
-$logo-bg-height:													60px;
+$logo-width:															160px !default;
+$logo-bg-size:														auto 60px !default;
+$logo-min-height:													80px !default;
+$logo-bg-height:													60px !default;
 
 /* panels
 *********************************************************** */
-$panel-border-radius:											0;
-$panel-footer-bg:													transparent;
+$panel-border-radius:											0 !default;
+$panel-footer-bg:													transparent !default;
 
 /* Links
 *********************************************************** */
 /* link states, colors, background colors and decoration settings
 *********************************************************** */
 $link-color: 															#117FBA !default;
-$link-visited-color:											$link-color;
-$link-hover-color:												$link-color;
+$link-visited-color:											$link-color !default;
+$link-hover-color:												$link-color !default;
 $link-active-color:												darken($link-color, 10%) !default;
-$link-decoration:													none;
-$link-decoration-hover:										$link-decoration;
+$link-decoration:													none !default;
+$link-decoration-hover:										$link-decoration !default;
 
-$link-header-color:												$gray-lightest;
-$link-header-visited-color:								$link-header-color;
-$link-header-hover-color:									$link-header-color;
+$link-header-color:												$gray-lightest !default;
+$link-header-visited-color:								$link-header-color !default;
+$link-header-hover-color:									$link-header-color !default;
 $link-header-active-color:								darken($link-header-color, 10%) !default;
-$link-header-decoration:									none;
-$link-header-decoration-hover:						underline;
+$link-header-decoration:									none !default;
+$link-header-decoration-hover:						underline !default;
 
-$link-footer-color:												$gray-lighter;
-$link-footer-visited-color:								$link-footer-color;
-$link-footer-active-color:								darken($link-footer-color,10%);
-$link-footer-hover-color:									$link-footer-color;
-$link-footer-decoration:									none;
-$link-footer-decoration-hover:						underline;
+$link-footer-color:												$gray-lighter !default;
+$link-footer-visited-color:								$link-footer-color !default;
+$link-footer-active-color:								darken($link-footer-color,10%) !default;
+$link-footer-hover-color:									$link-footer-colo !defaultr;
+$link-footer-decoration:									none !default;
+$link-footer-decoration-hover:						underline !default;
 
 
 /* Buttons
 *********************************************************** */
 /* default */
-$btn-color: 															$gray-lighter;
-$btn-background:													$gray;
-$btn-border:															$btn-background;
+$btn-color: 															$gray-lighter !default;
+$btn-background:													$gray !default;
+$btn-border:															$btn-background !default;
 
-$btn-active:															$gray-lighter;
-$btn-active-background:										darken($btn-background,10%);
-$btn-active-border:												$btn-active-background;
+$btn-active:															$gray-lighter !default;
+$btn-active-background:										darken($btn-background,10%) !default;
+$btn-active-border:												$btn-active-background !default;
 /* primary */
-$btn-primary-color:												$white;
-$btn-primary-background:									$brand-primary;
-$btn-primary-border:											$btn-primary-background;
+$btn-primary-color:												$white !default;
+$btn-primary-background:									$brand-primary !default;
+$btn-primary-border:											$btn-primary-background !default;
 
-$btn-primary-active:											$btn-primary-color;
-$btn-primary-active-background:						lighten($btn-primary-background,10%);
-$btn-primary-active-border:								$btn-primary-active-background;
+$btn-primary-active:											$btn-primary-color !default;
+$btn-primary-active-background:						lighten($btn-primary-background,10%) !default;
+$btn-primary-active-border:								$btn-primary-active-background !default;
 /* secondary */
-$btn-secondary-color:											$btn-color;
-$btn-secondary-background:								$btn-background;
-$btn-secondary-border:										$btn-border;
+$btn-secondary-color:											$btn-color !default;
+$btn-secondary-background:								$btn-background !default;
+$btn-secondary-border:										$btn-border !default;
 
-$btn-secondary-active:										$btn-active;
-$btn-secondary-active-background:					$btn-active-background;
-$btn-secondary-active-border:							$btn-active-border;
+$btn-secondary-active:										$btn-active !default;
+$btn-secondary-active-background:					$btn-active-background !default;
+$btn-secondary-active-border:							$btn-active-border !default;
 
 /* Tables
 *********************************************************** */
-$table-cell-padding: 14px 18px 12px 18px;
+$table-cell-padding: 14px 18px 12px 18px !default;
