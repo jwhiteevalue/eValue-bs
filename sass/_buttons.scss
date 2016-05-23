@@ -1,5 +1,6 @@
 .btn {
 	border: 0px solid transparent;
+	border-radius:0;
   //@include btn-variant($btn-color, $btn-background, $btn-border);
 
   &:hover {
