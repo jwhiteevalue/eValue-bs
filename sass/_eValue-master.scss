@@ -142,7 +142,8 @@ footer {
   background-color: $gray-dark;
   border-top:0 solid $gray-lighter;
 
-  .container-fluid {
+  .container,
+	.container-fluid {
     padding-top:20px;
   }
 
