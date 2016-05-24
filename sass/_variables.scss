@@ -145,6 +145,19 @@ $btn-secondary-active:										$btn-active !default;
 $btn-secondary-active-background:					$btn-active-background !default;
 $btn-secondary-active-border:							$btn-active-border !default;
 
+/* Neutralise rounded corners
+*********************************************************** */
+$border-radius-base:        0 !default;
+$border-radius-large:       0 !default;
+$border-radius-small:       0 !default;
+
+/* Inputs
+*********************************************************** */
+$input-border-radius:            					0 !default;
+$input-border-radius-large:								0 !default;
+$input-border-radius-small:      					0 !default;
+
+
 /* Tables
 *********************************************************** */
 $table-cell-padding: 14px 18px 12px 18px !default;
