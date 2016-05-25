@@ -63,7 +63,6 @@ $header-text-color:												$white !default;
 $footer-bg:																$gray-lightest !default;
 $footer-text-color:												$gray !default;
 
-
 /* navbar
 *********************************************************** */
 $navbar-default-bg:												$gray-dark!default;
@@ -78,6 +77,9 @@ $navbar-default-link-active-color:        $brand-primary !default;
 $navbar-default-link-active-bg:           lighten($navbar-default-bg, 25%) !default;
 $navbar-default-link-disabled-color:      $gray !default;
 
+/* Breadcrumbs
+*********************************************************** */
+$breadcrumb-bg:	$navbar-default-bg;
 
 /* The logo
 *********************************************************** */
