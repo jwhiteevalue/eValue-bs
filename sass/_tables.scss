@@ -1,6 +1,30 @@
 //
-// Tables
+// Tables - eValue overrides
 // --------------------------------------------------
+
+.table {
+	> thead > tr > th {
+		background-color:$gray-lightest;
+	}
+
+	/* checkbox/radio elements in a table */
+	.form-group {
+		margin-bottom:0;
+	}
+
+	.radio,
+	.checkbox {
+		margin-top:0;
+		margin-bottom:0;
+	}
+}
+
+
+
+/* ********************************************************
+	Comment out the whole of this to negate the Material Design styling i had added in. Most of it is just a duplicate
+	of the original bootstrap-sass anyway
+	********************************************************
 
 
 table {
@@ -262,3 +286,4 @@ table {
     }
   }
 }
+*/

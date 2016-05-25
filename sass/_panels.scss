@@ -12,9 +12,9 @@
 .panel-heading {
 	//padding:0;
 	a {
-		border-top-left-radius:$border-radius-base;
-		border-top-right-radius:$border-radius-base;
-		//@include border-top-radius(($panel-border-radius - 1));
+		// border-top-left-radius:$border-radius-base;
+		// border-top-right-radius:$border-radius-base;
+		border-radius:0; 
 	}
 
 	a,
@@ -45,4 +45,18 @@
 
   @include border-bottom-radius(($panel-border-radius - 1));
 */
+}
+
+/* situation where there is a panel heading in an accordion;
+	 to make the full heading a link (9)rather than just the text)
+	 we need to add in padding:0
+*/
+
+.panel-group {
+	.panel-heading {
+		padding:0;
+		a {
+			padding:20px 30px;
+		}
+	}
 }
