@@ -1,14 +1,8 @@
 /* Specific Pages: #Login
 *********************************************************** */
-#login {
-  #forgot-password {
-    text-align: center;
-  }
-}
-
 .login-wrapper {
   margin: 10px auto 40px;
-	
+
   .btn {
     margin: 20px 0;
     width: 100%;
@@ -32,4 +26,8 @@
 	padding:15px;
 	font-size:16px;
 	text-align:center;
+}
+
+#forgot-password {
+  text-align: center;
 }
