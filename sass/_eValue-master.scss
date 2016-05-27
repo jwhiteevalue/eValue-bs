@@ -36,6 +36,9 @@ header .btn-link {
 	@include link-variant (	$link-header-color,$link-header-visited-color,$link-header-hover-color,$link-header-active-color,$link-header-decoration,$link-header-decoration-hover)
 }
 
+a.btn-default {
+	color:$btn-secondary-color;
+}
 
 /* Bootstrap Tables
 *********************************************************** */
