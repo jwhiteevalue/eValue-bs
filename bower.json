@@ -8,9 +8,9 @@
 		"js/eValue-bs.js"
 	],
 	"ignore": [
-    "node_modules",
-    "bower_components"
-  ],
+		"node_modules",
+		"bower_components"
+	],
 	"dependencies": {
 		"jquery": ">=1.10.2",
 		"bootstrap-sass": "~3.3.6"
