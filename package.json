@@ -1,0 +1,14 @@
+{
+	"name": "eValue-bs",
+	"version": "0.1.41",
+	"description": "A version of Bootstrap, based on the original but with eValue branding placed on top.",
+	"homepage": "https://github.com/jwhiteevalue/eValue-bs.git",
+	"author": "Jon White",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jwhiteevalue/eValue-bs.git"
+	},
+	"bugs": {
+		"url": "https://github.com/jwhiteevalue/eValue-bs/issues"
+	}
+}
