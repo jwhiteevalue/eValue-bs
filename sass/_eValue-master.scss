@@ -75,8 +75,8 @@ body {
     //margin-top: $navbar-height;
 		height:$logo-min-height + $navbar-padding-vertical;
 	  padding:0;
-	  padding-top:($logo-min-height / 2) - ($font-size-base*0.65 / 2) - 10px;
-
+	  //padding-top:($logo-min-height / 2) - ($font-size-base*0.65 / 2) - 10px;
+		padding-top:($logo-min-height +  $navbar-padding-vertical) - (($font-size-base*1.428571429) + $navbar-padding-vertical + 4px);
 
     li {
       a {
