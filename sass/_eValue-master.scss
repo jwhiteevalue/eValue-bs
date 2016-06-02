@@ -76,7 +76,7 @@ body {
 		height:$logo-min-height + $navbar-padding-vertical;
 	  padding:0;
 	  //padding-top:($logo-min-height / 2) - ($font-size-base*0.65 / 2) - 10px;
-		padding-top:($logo-min-height +  $navbar-padding-vertical) - (($font-size-base*1.428571429) + $navbar-padding-vertical + 4px);
+		padding-top:($logo-min-height +  $navbar-padding-vertical) - (($font-size-base*1.428571429) + $navbar-padding-vertical + 5px);
 
     li {
       a {
@@ -120,6 +120,12 @@ body {
   }
 }
 
+// In the case of a navbar needing to vertically aligned in the middle e.g. log out
+// A class of header-vertical-middle needs to be added to the navbar-nav div.
+.navbar-nav.header-vertical-middle {
+	// this will override the bottom alignment of a navbar
+	padding-top:($logo-min-height / 2) - ($font-size-base*0.65 / 2) - 10px;
+}
 
 /* Layout: #main wrapper
 *********************************************************** */
