@@ -70,56 +70,6 @@ body {
 
 /* Layout: #Header
 *********************************************************** */
-.navbar-default {
-  .navbar-nav {
-    //margin-top: $navbar-height;
-		height:$logo-min-height + $navbar-padding-vertical;
-	  padding:0;
-	  //padding-top:($logo-min-height / 2) - ($font-size-base*0.65 / 2) - 10px;
-		padding-top:($logo-min-height +  $navbar-padding-vertical) - (($font-size-base*1.428571429) + $navbar-padding-vertical + 5px);
-
-    li {
-      a {
-        padding: 10px 24px;
-        &:focus {
-          background-color: lighten($navbar-default-link-hover-bg,20%);
-          color: $white;
-        }
-      }
-    }
-
-    li.active:after {
-      height: 4px;
-      background-color: $white;
-      width: 100%;
-      content: " ";
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
-
-    @media (max-width: $screen-sm-min) {
-      li {
-        a {
-          padding: 10px 15px;
-        }
-      }
-    }
-    @media (max-width: $screen-xs-min) {
-      li.active {
-        a {
-          background-color: $brand-primary!important;
-					color:$gray;
-        }
-      }
-      li.active:after {
-        display: none;
-      }
-    }
-  }
-}
-
 // In the case of a navbar needing to vertically aligned in the middle e.g. log out
 // A class of header-vertical-middle needs to be added to the navbar-nav div.
 .navbar-nav.header-vertical-middle {
