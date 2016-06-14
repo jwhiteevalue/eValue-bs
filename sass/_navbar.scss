@@ -45,7 +45,7 @@
 		height:$logo-min-height;
 		padding:0;
 		//padding-top:($logo-min-height / 2) - ($font-size-base*0.65 / 2) - 10px;
-		padding-top:($logo-min-height) - ($font-size-base*1.428571429);
+		padding-top:($logo-min-height) - (($font-size-base * 1.428571429) + ($navbar-padding-vertical * 2));
 
 		li {
 			a {
