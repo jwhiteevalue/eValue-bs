@@ -66,6 +66,11 @@ $navbar-default-link-active-color:        $white !default;
 $navbar-default-link-active-bg:           lighten($navbar-default-bg, 25%) !default;
 $navbar-default-link-disabled-color:      $gray !default;
 
+/* html5 blocks
+*********************************************************** */
+$main-padding-top:													100px;
+
+
 /* Breadcrumbs
 *********************************************************** */
 $breadcrumb-bg:	$navbar-default-bg;

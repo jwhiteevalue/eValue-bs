@@ -80,10 +80,10 @@ body {
 /* Layout: #main wrapper
 *********************************************************** */
 main {
-  padding-top:120px;
+  padding-top:$main-padding-top;
 
   @media (max-width: $screen-xs-max) {
-    padding-top:90px;
+    padding-top:($main-padding-top * 0.75);
   }
 
   @media (min-width: $screen-xs-min)  and (max-width: $screen-sm-min) {
