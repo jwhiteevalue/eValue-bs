@@ -53,6 +53,24 @@ a.btn-default {
 	border-radius:0;
 }
 
+
+
+/* Bootstrap: #Alerts
+*********************************************************** */
+.alert {
+	[class*=" icon-"],
+	[class^="icon-"] {
+		font-size: $font-size-base*2;
+		margin-right: 20px;
+	}
+
+	h2 {
+		margin: 0;
+		font-size: $font-size-base*1.6;
+	}
+}
+
+
 /* Layout: #Sticky Footer
 *********************************************************** */
 html {
