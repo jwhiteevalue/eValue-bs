@@ -1,0 +1,41 @@
+.nav-tabs {
+	[class*=" icon-"],
+	[class^="icon-"] {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: auto;
+		padding-right: 15px;
+		line-height: $line-height-base*1.5;
+		font-size: $font-size-base*1.4;
+	}
+
+	li {
+		a {
+			color: $btn-secondary-color;
+			background-color: $btn-secondary-background;
+		}
+
+		a:active,
+		a:focus {
+		 color: $btn-secondary-color;
+		 background-color: $btn-secondary-active-background;
+		}
+	}
+}
+
+.tab-pane {
+	width: 100%;
+	background-color: $white;
+	border: 1px solid $gray-lighter;
+	border-top: 0;
+	padding: 40px 20px 0 20px;
+	float: left;
+
+	.tab-pane.active {
+		float: left;
+		width: 100%;
+		padding-top: 20px;
+	}
+}
