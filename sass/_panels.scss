@@ -5,21 +5,18 @@
 // Base class
 .panel {
   background-color: $panel-bg;
-	border:1px solid $gray-lightest;
+	//border:1px solid $gray-lightest;
+	border:1px solid $gray-lighter;
   @include box-shadow(0 2px 5px $gray-lighter);
 }
 
 .panel-heading {
-	//padding:0;
 	a {
-		// border-top-left-radius:$border-radius-base;
-		// border-top-right-radius:$border-radius-base;
-		border-radius:0; 
+		border-radius:0;
 	}
 
 	a,
 	a:hover {
-
 		display:block;
 		color:$gray;
 		padding:10px 15px;
@@ -53,10 +50,29 @@
 */
 
 .panel-group {
+	.panel {
+		box-shadow:0 0 0 0;
+	}
+
 	.panel-heading {
 		padding:0;
 		a {
-			padding:20px 30px;
+			display:block;
+			padding:10px 15px;
+			font-size: $font-size-base*1.15;
 		}
+
+		a,
+		a:hover {
+			color:$link-color;
+		}
+
+		a:focus,
+		a:active,
+		a[aria-expanded="true"] {
+			background-color:$gray-lightest;
+			color:$link-color;
+		}
+
 	}
 }
