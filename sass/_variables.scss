@@ -48,8 +48,8 @@ $font-size-h2:														$font-size-h1*0.85 !default;
 *********************************************************** */
 $header-bg:																$gray-dark !default;
 $header-text-color:												$white !default;
-$footer-bg:																$gray-lightest !default;
-$footer-text-color:												$gray !default;
+$footer-bg:																$gray-dark !default;
+$footer-text-color:												$gray-lightest !default;
 
 /* navbar
 *********************************************************** */
@@ -101,7 +101,7 @@ $link-header-active-color:								darken($link-header-color, 10%) !default;
 $link-header-decoration:									none !default;
 $link-header-decoration-hover:						underline !default;
 
-$link-footer-color:												$link-color !default;
+$link-footer-color:												$gray-lightest !default;
 $link-footer-visited-color:								$link-footer-color !default;
 $link-footer-active-color:								darken($link-footer-color,10%) !default;
 $link-footer-hover-color:									$link-footer-color !default;
