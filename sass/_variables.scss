@@ -53,7 +53,7 @@ $footer-text-color:												$gray-lightest !default;
 
 /* navbar
 *********************************************************** */
-$navbar-default-bg:												$gray-dark!default;
+$navbar-default-bg:											 	$header-bg !default;
 $navbar-default-color: 										$gray-lighter !default;
 $navbar-default-border: 									transparent !default;
 $navbar-border-radius:  									0 !default;
