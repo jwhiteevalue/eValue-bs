@@ -84,7 +84,10 @@ a.btn-primary {
 }
 
 a.btn-secondary {
-	color:$btn-secondary-color;
+	&,
+	&:visited {
+		color:$btn-secondary-color;
+	}
 
 	[class^="icon-"],
 	[class*=" icon-"] {
