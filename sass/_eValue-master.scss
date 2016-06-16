@@ -80,7 +80,7 @@ html {
 
 body {
 	margin-bottom: 80px;
-	// 
+	//
   // @media (max-width: $screen-xs-max) {
   //   margin-bottom:0;
 	//
@@ -102,7 +102,7 @@ main {
   padding-top:$main-padding-top;
 
   @media (max-width: $screen-xs-max) {
-    padding-top:($main-padding-top * 0.75);
+    // padding-top:($main-padding-top * 0.75);
   }
 
   @media (min-width: $screen-xs-min)  and (max-width: $screen-sm-min) {
