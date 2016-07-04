@@ -3,8 +3,8 @@
 @import '_mixins.scss';
 
 /* 2. Use Bootstrap-sass to fill any gaps */
-@import '#{$package-manager}bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
-@import '#{$package-manager}bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
+@import '#{$package-manager}/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+@import '#{$package-manager}/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
 
 /* 3. import the styling itself */
 @import '_buttons.scss';
