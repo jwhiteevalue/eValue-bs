@@ -22,12 +22,12 @@ $filepath: 																"../";
 *********************************************************** */
 @font-face {
   font-family:'open_sansregular';
-  src: url("#{$filepath}fonts/opensans-regular-webfont.eot");
+  src: url("../fonts/opensans-regular-webfont.eot");
   src:
-		url("#{$filepath}fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"),
-		url("#{$filepath}fonts/opensans-regular-webfont.woff") format("woff"),
-		url("#{$filepath}fonts/opensans-regular-webfont.ttf") format("truetype"),
-		url("#{$filepath}fonts/opensans-regular-webfont.svg#opensans-regular-webfont") format("svg");
+		url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/opensans-regular-webfont.woff") format("woff"),
+		url("../fonts/opensans-regular-webfont.ttf") format("truetype"),
+		url("../fonts/opensans-regular-webfont.svg#opensans-regular-webfont") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -78,7 +78,7 @@ $breadcrumb-bg:	$navbar-default-bg;
 
 /* The logo
 *********************************************************** */
-$logo:																		url("#{$filepath}images/logo.png");
+$logo:																		url("../images/logo.png");
 $logo-width:															160px !default;
 $logo-bg-size:														auto 60px !default;
 $logo-min-height:													80px !default;
