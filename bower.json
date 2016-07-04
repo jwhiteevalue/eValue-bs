@@ -15,5 +15,5 @@
 		"jquery": ">=1.10.2",
 		"bootstrap-sass": "~3.3.6"
 	},
-	"version": "0.1.65"
+	"version": "0.1.66"
 }
