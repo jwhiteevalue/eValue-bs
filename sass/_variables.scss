@@ -15,7 +15,8 @@ $brand-secondary:													$gray-lightest!default;
 
 /* File path
 *********************************************************** */
-$filepath: 																"../bower_components/eValue-bs/";
+$package-manager:														"";
+$filepath: 																"../$package-manager/eValue-bs/";
 
 /* Fonts
 *********************************************************** */
